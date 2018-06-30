@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>オブジェクトのバインディング</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <p v-pre>{{$data}}でVueオブジェクトのdataを確認できる</p>
+        <span>{{$data}}</span>
+        <p>属性データのバインディング</p>
+        &lt;span v-bind:id=&quot;text&quot;&gt;<span v-pre>{{text}}</span>&lt;/span&gt; -->  &lt;span id=&quot;vue.js&quot;&gt;vue.js&lt;/span&gt;
+        <p>スタイルのバインディング</p>
+        <p>属性をバインディング&lt;span v-bind:style=&quot;{color:textcolor, backgroundColor:bgcolor}&quot;&gt;text&lt;/span&gt;   <span v-bind:style="{color:textcolor, backgroundColor:bgcolor}">text</span></p>
+        <p>オブジェクトデータとしてstyle属性に渡す &lt;span v-bind:style=&quot;style&quot;&gt;text&lt;/span&gt;   <span v-bind:style="style">text</span></p>
+    </div>
+    <script src="vue.js"></script>
+    <script src="binding.js"></script>
+</body>
+</html>

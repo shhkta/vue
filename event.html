@@ -15,7 +15,7 @@
         <p>Eventオブジェクトの参照(ex. timeStamp, type)
             <input v-on:keyup.enter="event"> {{event_value}}</p>
         <p>Event.targetオブジェクトの参照(ex. baseURI, tagName)
-            <input v-on:keyup.enter="eventTarget"> {{event_target_value}}</p>
+            <input v-on:keydown.enter="eventTarget"> {{event_target_value}}</p>
     </div>
     <script src="vue.js"></script>
     <script src="event.js"></script>
