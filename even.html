@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eventオブジェクトの参照</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <p>Eventオブジェクトの参照(see console)
+            <button v-on:click="mouseevent">getEvent</button>
+        </p>
+        <p>Eventオブジェクトの参照(ex. timeStamp, type)
+            <input v-on:keyup.enter="event"> {{event_value}}</p>
+        <p>Event.targetオブジェクトの参照(ex. baseURI, tagName)
+            <input v-on:keyup.enter="eventTarget"> {{event_target_value}}</p>
+    </div>
+    <script src="vue.js"></script>
+    <script src="event.js"></script>
+</body>
+
+</html>
